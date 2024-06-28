@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Amilton Lucas" />
+    <meta name="creator" content="Front Dev Studio" />
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <link
+      rel="shortcut icon"
+      href="src/images/icons/logo.svg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playwrite+IT+Moderna:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script defer src="src/js/script.js"></script>
+    <title>SkyTrix</title>
+  </head>
+  <body>
+    <header id="home">
+      <article>
+        <!-- Menu Mobile-->
+        <nav class="navbar bg-body-tertiary fixed-top" id="navMobile">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="">
+              <img
+                src="src/images/icons/logoBlack.svg"
+                alt="Logo"
+                width="30"
+                height="24"
+                class="d-inline-block align-text-top"
+              />
+              Sky Trix
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  <a class="navbar-brand" href="">
+                    <img
+                      src="src/images/icons/logo.svg"
+                      alt="Logo"
+                      width="30"
+                      height="24"
+                      class="d-inline-block align-text-top"
+                    />
+                    Sky Trix
+                  </a>
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Passagens">Passagens</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Sobre">Sobre nós</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-disabled="true" href="#Contato"
+                      >Contato</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Menu Desktop -->
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navDesktop">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="src/images/icons/logoBlack.svg"
+                alt="Logo"
+                width="30"
+                height="24"
+                class="d-inline-block align-text-top"
+              />
+              Sky Trix
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Passagens">Passagens</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Sobre">Sobre nós</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-disabled="true" href="#Contato"
+                    >Contato</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Carousel -->
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="src/images/carousel1.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="src/images/carousel2.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="src/images/carousel3.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="subMenuContainer">
+          <nav class="subMenu">
+            <ul>
+              <li><a href="#Nacionais">Passagens Nacionais</a></li>
+              <li><a href="#Internacionais">Passagens Internacioanais</a></li>
+              <li><a href="#Kit">Kit Viagem</a></li>
+            </ul>
+          </nav>
+        </div>
+      </article>
+    </header>
+
+    <main id="Passagens">
+      <article>
+        <section class="PassagensContainer" id="Nacionais">
+          <h2>Passagens Nacionais</h2>
+          <div class="carousel">
+            <button class="prev" aria-label="Anterior">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="cardsOurServices">
+              <div class="cardOurServices">
+                <div class="imageBox">
+                  <img src="src/images/viagens/Natal.png" alt="Natal - RN" />
+                </div>
+                <div class="textBox">
+                  <h3>
+                    Natal - RN
+                    <img src="src/images/icons/brasil.svg" alt="Brasil" />
+                  </h3>
+                  <p>
+                    <i class="fa-solid fa-plane-departure"></i> Passagem de ida
+                    e volta
+                  </p>
+                  <p><i class="fa-solid fa-dollar-sign"></i> 2200 / Pessoa</p>
+                </div>
+              </div>
+              <div class="cardOurServices">
+                <div class="imageBox">
+                  <img
+                    src="src/images/viagens/Sao-Paulo.png"
+                    alt="São Paulo - SP"
+                  />
+                </div>
+                <div class="textBox">
+                  <h3>
+                    São Paulo - SP
+                    <img src="src/images/icons/brasil.svg" alt="Brasil" />
+                  </h3>
+                  <p>
+                    <i class="fa-solid fa-plane-departure"></i> Passagem de Ida
+                    e Volta
+                  </p>
+                  <p><i class="fa-solid fa-dollar-sign"></i> 2300 / Pessoa</p>
+                </div>
+              </div>
+              <div class="cardOurServices">
+                <div class="imageBox">
+                  <img
+                    src="src/images/viagens/Fortaleza.png"
+                    alt="Fortaleza - CE"
+                  />
+                </div>
+                <div class="textBox">
+                  <h3>
+                    Fortaleza - CE
+                    <img src="src/images/icons/brasil.svg" alt="Brasil" />
+                  </h3>
+                  <p>
+                    <i class="fa-solid fa-plane-departure"></i> Passagem de ida
+                    e volta
+                  </p>
+                  <p><i class="fa-solid fa-dollar-sign"></i> 2000 / Pessoa</p>
+                </div>
+              </div>
+              <div class="cardOurServices">
+                <div class="imageBox">
+                  <img
+                    src="src/images/viagens/Gramado.png"
+                    alt="Gramado - RS"
+                  />
+                </div>
+                <div class="textBox">
+                  <h3>
+                    Gramado - RS
+                    <img src="src/images/icons/brasil.svg" alt="Brasil" />
+                  </h3>
+                  <p>
+                    <i class="fa-solid fa-plane-departure"></i> Passagem de ida
+                    e volta
+                  </p>
+                  <p><i class="fa-solid fa-dollar-sign"></i> 3200 / Pessoa</p>
+                </div>
+              </div>
+              <div class="cardOurServices">
+                <div class="imageBox">
+                  <img src="src/images/viagens/Recife.png" alt="Recife - PE" />
+                </div>
+                <div class="textBox">
+                  <h3>
+                    Recife - PE
+                    <img src="src/images/icons/brasil.svg" alt="Brasil" />
+                  </h3>
+                  <p>
+                    <i class="fa-solid fa-plane-departure"></i> Passagem de ida
+                    e volta
+                  </p>
+                  <p><i class="fa-solid fa-dollar-sign"></i> 2800 / Pessoa</p>
+                </div>
+              </div>
+            </div>
+            <button class="next" aria-label="Próximo">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </section>
+
+        <section class="PassagensContainer" id="Internacionais">
+          <h2>Passagens Internacionais</h2>
+          <div class="carousel">
+            <button class="prev-internacionais" aria-label="Anterior">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="cardsOurServices">
+              <div class="cardOurServices">
+                <div class="imageBox">
+                  <img src="src/images/viagens/Paris.png" alt="Paris - FRA" />
+                </div>
+                <div class="textBox">
+                  <h3>
+                    Paris - FRA
+                    <img src="src/images/icons/france.svg" alt="França" />
+                  </h3>
+                  <p>
+                    <i class="fa-solid fa-plane-departure"></i> Passagem de ida
+                    e volta
+                  </p>
+                  <p><i class="fa-solid fa-moon"></i> 3 Dias e 4 Noites</p>
+                  <p><i class="fa-solid fa-dollar-sign"></i> 12200 / Pessoa</p>
+                </div>
+              </div>
+              <div class="cardOurServices">
+                <div class="imageBox">
+                  <img
+                    src="src/images/viagens/Los-Angeles.png"
+                    alt="Los Angeles - EUA"
+                  />
+                </div>
+                <div class="textBox">
+                  <h3>
+                    Los Angeles - EUA
+                    <img src="src/images/icons/usa.svg" alt="EUA" />
+                  </h3>
+                  <p>
+                    <i class="fa-solid fa-plane-departure"></i> Passagem de Ida
+                    e Volta
+                  </p>
+                  <p><i class="fa-solid fa-moon"></i> 3 Dias e 4 Noites</p>
+                  <p><i class="fa-solid fa-dollar-sign"></i> 8500 / Pessoa</p>
+                </div>
+              </div>
+              <div class="cardOurServices">
+                <div class="imageBox">
+                  <img src="src/images/viagens/Tokyo.png" alt="Tokyo - JP" />
+                </div>
+                <div class="textBox">
+                  <h3>
+                    Tokyo - JP
+                    <img src="src/images/icons/japan.svg" alt="Japão" />
+                  </h3>
+                  <p>
+                    <i class="fa-solid fa-plane-departure"></i> Passagem de ida
+                    e volta
+                  </p>
+                  <p><i class="fa-solid fa-moon"></i> 2 Dias e 3 Noites</p>
+                  <p><i class="fa-solid fa-dollar-sign"></i> 12000 / Pessoa</p>
+                </div>
+              </div>
+              <div class="cardOurServices">
+                <div class="imageBox">
+                  <img src="src/images/viagens/Roma.png" alt="Roma - ITA" />
+                </div>
+                <div class="textBox">
+                  <h3>
+                    Roma - ITA
+                    <img src="src/images/icons/italy.svg" alt="Itália" />
+                  </h3>
+                  <p>
+                    <i class="fa-solid fa-plane-departure"></i> Passagem de ida
+                    e volta
+                  </p>
+                  <p><i class="fa-solid fa-moon"></i> 2 Dias e 3 Noites</p>
+                  <p><i class="fa-solid fa-dollar-sign"></i> 15000 / Pessoa</p>
+                </div>
+              </div>
+              <div class="cardOurServices">
+                <div class="imageBox">
+                  <img
+                    src="src/images/viagens/Buenos-Aries.png"
+                    alt="Buenos Aires - ARG"
+                  />
+                </div>
+                <div class="textBox">
+                  <h3>
+                    Buenos Aires - ARG
+                    <img src="src/images/icons/argentina.svg" alt="Argentina" />
+                  </h3>
+                  <p>
+                    <i class="fa-solid fa-plane-departure"></i> Passagem de ida
+                    e volta
+                  </p>
+                  <p><i class="fa-solid fa-moon"></i> 2 Dias e 3 Noites</p>
+                  <p><i class="fa-solid fa-dollar-sign"></i> 12000 / Pessoa</p>
+                </div>
+              </div>
+            </div>
+            <button class="next-internacionais" aria-label="Próximo">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </section>
+
+        <section class="PassagensContainer" id="Kit">
+          <h2>Kit Viagem</h2>
+          <div class="carousel">
+            <button class="prev-kit" aria-label="Anterior">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="cardsOurServices">
+              <div class="cardOurServices">
+                <div class="imageBox">
+                  <img
+                    src="src/images/viagens/Gran-Canyon.png"
+                    alt="Gran Canyon - EUA"
+                  />
+                </div>
+                <div class="textBox">
+                  <h3>
+                    Oeste dos Estados Unidos - EUA
+                    <img src="src/images/icons/usa.svg" alt="EUA" />
+                  </h3>
+                  <p>
+                    Los Angeles <br />
+                    Las Vegas <br />
+                    Seattle
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-plane-departure"></i> Passagem de ida
+                    e volta <br />
+                    <i class="fa-solid fa-house"></i> Hospedagem <br />
+                    <i class="fa-solid fa-tree"></i> Visita a pontos turísticos
+                  </p>
+                  <p><i class="fa-solid fa-moon"></i> 6 Dias e 7 Noites</p>
+                  <p><i class="fa-solid fa-dollar-sign"></i> 15000 / Pessoa</p>
+                </div>
+              </div>
+              <div class="cardOurServices">
+                <div class="imageBox">
+                  <img src="src/images/viagens/Disney.png" alt="Disney - EUA" />
+                </div>
+                <div class="textBox">
+                  <h3>
+                    Sul dos Estados Unidos - EUA
+                    <img src="src/images/icons/usa.svg" alt="EUA" />
+                  </h3>
+                  <p>
+                    Atlanta <br />
+                    Miami <br />
+                    Orlando
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-plane-departure"></i> Passagem de ida
+                    e volta <br />
+                    <i class="fa-solid fa-house"></i> Hospedagem <br />
+                    <i class="fa-solid fa-tree"></i> Visita a Disney e pontos
+                    turísticos
+                  </p>
+                  <p><i class="fa-solid fa-moon"></i> 6 Dias e 7 Noites</p>
+                  <p><i class="fa-solid fa-dollar-sign"></i> 18000 / Pessoa</p>
+                </div>
+              </div>
+              <div class="cardOurServices">
+                <div class="imageBox">
+                  <img
+                    src="src/images/viagens/Espanha.png"
+                    alt="Espanha - ESP"
+                  />
+                </div>
+                <div class="textBox">
+                  <h3>
+                    Espanha e Portugal - ESP
+                    <img src="src/images/icons/spain.svg" alt="EUR" />
+                  </h3>
+                  <p>
+                    Espanha <br />
+                    Portugal <br />
+                    <br />
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-plane-departure"></i> Passagem de ida
+                    e volta <br />
+                    <i class="fa-solid fa-house"></i> Hospedagem <br />
+                    <i class="fa-solid fa-tree"></i> Visita e pontos turísticos
+                  </p>
+                  <p><i class="fa-solid fa-moon"></i> 4 Dias e 5 Noites</p>
+                  <p><i class="fa-solid fa-dollar-sign"></i> 12000 / Pessoa</p>
+                </div>
+              </div>
+            </div>
+            <button class="next-kit" aria-label="Próximo">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </section>
+
+        <section class="whyChooseUsContainer" id="Sobre">
+          <div class="imageSalesPerson">
+            <div class="circle"></div>
+            <img src="src/images/vendedoras.png" alt="salesperson" />
+          </div>
+          <div class="boxWhyChooseUs">
+            <h2>Por que nos escolher?</h2>
+            <div class="cardsWhyChooseUs">
+              <div class="cardWhyChooseUs">
+                <div class="boxImage">
+                  <img src="src/images/icons/tax.svg" alt="icon" />
+                </div>
+                <p>
+                  Não há taxas ocultas. Nossas tarifas são claras e
+                  competitivas!
+                </p>
+              </div>
+
+              <div class="cardWhyChooseUs">
+                <div class="boxImage">
+                  <img src="src/images/icons/time.svg" alt="icon" />
+                </div>
+                <p>Todos os nossos planos passam por periódicas manutenções!</p>
+              </div>
+
+              <div class="cardWhyChooseUs">
+                <div class="boxImage">
+                  <img src="src/images/icons/map.svg" alt="icon" />
+                </div>
+                <p>
+                  Retire e devolva sua viagem em qualquer um de nossos planos!
+                </p>
+              </div>
+
+              <div class="cardWhyChooseUs">
+                <div class="boxImage">
+                  <img src="src/images/icons/check.svg" alt="icon" />
+                </div>
+                <p>
+                  Anos de experiência no setor, com confiabilidade e
+                  comprometimento!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <div class="container">
+        <article>
+          <section class="subscribe">
+            <h3>Fale conosco</h3>
+            <p>
+              Nossa equipe está comprometida em fornecer conteúdo valioso e
+              envolvente para enriquecer sua experiência.
+            </p>
+
+            <form onsubmit="{messageSubscribe()}">
+              <input
+                type="email"
+                name="email"
+                placeholder="Digite seu email"
+                required
+              />
+              <button type="submit">Inscreva-se</button>
+            </form>
+          </section>
+
+          <section class="contacts" id="Contato">
+            <h3>Contatos</h3>
+            <div class="contact">
+              <strong>Telefone</strong>
+              <p>(12) 99424-5215</p>
+            </div>
+
+            <div class="contact">
+              <strong>Email</strong>
+              <p>SkyTrix@gmail.com</p>
+            </div>
+
+            <div class="socialMedias">
+              <a href="">
+                <div class="logo">
+                  <i class="fa-brands fa-facebook"></i>
+                </div>
+                <strong>Facebook</strong>
+              </a>
+
+              <a href="">
+                <div class="logo">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+                <strong>Instagram</strong>
+              </a>
+            </div>
+          </section>
+
+          <section class="local">
+            <h3>Localização</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.8369306177688!2d-46.63223132462374!3d-23.646010278741795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5adda4c3cb95%3A0x31916ce58f719167!2sS%C3%A3o%20Paulo%20Expo!5e0!3m2!1spt-BR!2sbr!4v1719422930106!5m2!1spt-BR!2sbr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <p>
+              Rodovia dos Imigrantes, 1,5 km - Vila Água Funda, São Paulo - SP,
+              04329-900
+            </p>
+          </section>
+        </article>
+      </div>
+
+      <div class="help">
+        <a href="#home">Início</a>
+        <a href="https://github.com/FrontDevStudio" target="_blank">Ajuda</a>
+        <a href="https://github.com/FrontDevStudio" target="_blank"
+          >Termos de uso</a
+        >
+      </div>
+
+      <div class="copyright">
+        <a href="https://github.com/FrontDevStudio" target="_blank">
+          <strong>&copy; Front Dev Studio</strong>
+        </a>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

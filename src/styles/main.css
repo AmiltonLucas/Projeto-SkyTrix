@@ -1,0 +1,398 @@
+:root {
+  --blue-700: #023e73;
+  --blue-500: #03588c;
+  --blue-300: #5496bf;
+  --blue-100: #9ac1d9;
+  --white-blue: #d8ebf2;
+}
+
+main .carousel button {
+  display: none;
+}
+
+main {
+  flex: 1;
+}
+
+.PassagensContainer {
+  padding: 2.4rem 0;
+}
+
+.PassagensContainer h2 {
+  text-align: center;
+}
+
+.cardsOurServices {
+  margin-top: 2.2rem;
+  display: flex;
+  align-items: start;
+  gap: 2.4rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  padding: 0 2.4rem;
+}
+
+.cardsOurServices::-webkit-scrollbar {
+  display: none;
+}
+
+.cardOurServices {
+  width: 100%;
+  scroll-snap-align: center;
+}
+
+.cardOurServices .imageBox {
+  width: 22rem;
+}
+
+.cardOurServices img {
+  width: 100%;
+  transition: scale 300ms;
+}
+
+.cardOurServices img:hover {
+  scale: 1.05;
+}
+
+.cardOurServices .textBox {
+  text-align: justify;
+}
+
+.cardOurServices h3 {
+  margin: 1.2rem 0 0.4rem;
+  font-size: 1.6rem;
+}
+
+.cardOurServices p {
+  font-size: 1.4rem;
+}
+
+.cardOurServices .textBox {
+  width: 100%;
+}
+
+.cardOurServices .textBox img {
+  width: 32px;
+  height: 32px;
+}
+
+.whyChooseUsContainer {
+  background: linear-gradient(315deg, #dbefff, #f5fafe, #d1d8e8);
+  padding: 3.2rem 2.4rem 2.4rem;
+}
+
+.imageSalesPerson {
+  max-width: 22rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.imageSalesPerson .circle {
+  background: linear-gradient(135deg, #2966c222, #2865c222, #1e4b8f22);
+  border-radius: 100%;
+  position: absolute;
+  height: 24rem;
+  width: 24rem;
+  top: 0rem;
+  left: -1rem;
+  z-index: -1;
+}
+
+.imageSalesPerson img {
+  width: 100%;
+}
+
+.boxWhyChooseUs {
+  margin: 1.6rem 0 0.8rem;
+  text-align: center;
+}
+
+.boxWhyChooseUs h2 {
+  font-size: 2rem;
+}
+
+.cardsWhyChooseUs {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.4rem;
+  max-width: 52rem;
+  margin: 1.6rem auto 0;
+}
+
+.cardWhyChooseUs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  padding: 0 2.4rem;
+}
+
+.cardWhyChooseUs .boxImage {
+  width: 4.2rem;
+}
+
+.cardWhyChooseUs .boxImage img {
+  width: 100%;
+}
+
+.cardWhyChooseUs p {
+  text-align: left;
+  font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .PassagensContainer {
+    padding: 2.4rem 0;
+  }
+
+  .PassagensContainer h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .cardsOurServices {
+    margin-top: 2.2rem;
+    display: flex;
+    align-items: start;
+    gap: 2.4rem;
+    overflow-x: auto;
+    scrollbar-width: none; /* Esconde a barra de rolagem no Firefox */
+    -ms-overflow-style: none; /* Esconde a barra de rolagem no IE/Edge */
+    scroll-snap-type: x mandatory;
+    padding: 0 2.4rem;
+    width: 100%; /* Ocupa toda a largura disponível */
+  }
+
+  .cardsOurServices::-webkit-scrollbar {
+    display: none; /* Esconde a barra de rolagem no Chrome/Safari */
+  }
+
+  .cardOurServices {
+    width: calc(33.333% - 1rem); /* Ajusta para mostrar 3 cartões por linha */
+    flex: none;
+    scroll-snap-align: center;
+  }
+
+  .cardOurServices .imageBox {
+    width: 22rem;
+  }
+
+  .cardOurServices img {
+    width: 100%;
+    transition: transform 300ms; /* Corrige a propriedade de transição */
+  }
+
+  .cardOurServices img:hover {
+    transform: scale(1.05); /* Corrige a transformação no hover */
+  }
+
+  .cardOurServices .textBox {
+    text-align: justify;
+    width: 100%;
+  }
+
+  .cardOurServices h3 {
+    margin: 1.2rem 0 0.4rem;
+    font-size: 1.6rem;
+  }
+
+  .cardOurServices p {
+    font-size: 1.4rem;
+  }
+
+  .cardOurServices .textBox img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .whyChooseUsContainer {
+    padding: 4.2rem 3.2rem 3.2rem;
+  }
+
+  .imageSalesPerson {
+    max-width: 28rem;
+  }
+
+  .imageSalesPerson .circle:nth-child(1) {
+    height: 30.5rem;
+    width: 30.5rem;
+  }
+
+  .boxWhyChooseUs {
+    margin: 1.8rem 0 1rem;
+  }
+
+  .boxWhyChooseUs h2 {
+    font-size: 2.4rem;
+  }
+
+  .cardsWhyChooseUs {
+    gap: 2.8rem;
+  }
+
+  .cardWhyChooseUs {
+    gap: 1.8rem;
+  }
+
+  .cardWhyChooseUs .boxImage {
+    width: 4.2rem;
+  }
+
+  .cardWhyChooseUs p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .carousel button {
+    display: block;
+  }
+
+  .PassagensContainer {
+    padding: 4.2rem 0;
+    overflow-x: hidden; /* Esconde a barra de rolagem horizontal do container principal */
+  }
+
+  .PassagensContainer h2 {
+    font-size: 3.2rem;
+    text-align: center;
+  }
+
+  .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden; /* Desabilita a barra de rolagem horizontal para o carousel, se aplicável */
+  }
+
+  .cardsOurServices {
+    margin-top: 3.2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 4.2rem;
+    overflow-x: hidden; /* Esconde a barra de rolagem horizontal do conteúdo */
+    width: 80%; /* Ajuste a largura conforme necessário */
+  }
+
+  .cardOurServices {
+    width: 38rem;
+    flex: none; /* Impede que os cartões se redimensionem */
+  }
+
+  .cardOurServices .imageBox {
+    width: 100%;
+    padding: 0.8rem 4.2rem 1.6rem;
+  }
+
+  .cardOurServices h3 {
+    margin: 1.6rem 0 0.8rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .cardOurServices p {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  /* Estilo dos botões de rolagem */
+  button.prev,
+  button.next,
+  button.prev-kit,
+  button.next-kit,
+  button.prev-internacionais,
+  button.next-internacionais {
+    background-color: rgba(255, 255, 255, 0); /* Fundo transparente */
+    border: none;
+    cursor: pointer;
+    font-size: 3rem; /* Maior tamanho */
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    color: black; /* Cor do texto preta para visibilidade */
+  }
+
+  button.prev:hover,
+  button.next:hover,
+  button.prev-kit:hover,
+  button.next-kit:hover,
+  button.prev-internacionais:hover,
+  button.next-internacionais:hover {
+    color: #555; /* Cor mais escura no hover */
+  }
+
+  button.prev {
+    left: -1rem; /* Mais próximo da área de rolagem */
+  }
+
+  button.next {
+    right: -1rem; /* Mais próximo da área de rolagem */
+  }
+
+  button.prev-kit {
+    left: -1rem; /* Mais próximo da área de rolagem */
+  }
+
+  button.next-kit {
+    right: -1rem; /* Mais próximo da área de rolagem */
+  }
+
+  button.prev-internacionais {
+    left: -1rem; /* Mais próximo da área de rolagem */
+  }
+
+  button.next-internacionais {
+    right: -1rem; /* Mais próximo da área de rolagem */
+  }
+
+  .whyChooseUsContainer {
+    padding: 4.2rem 3.2rem 3.2rem;
+    display: flex;
+  }
+
+  .imageSalesPerson {
+    max-width: 36rem;
+  }
+
+  .imageSalesPerson img {
+    position: relative;
+    left: 2rem;
+  }
+
+  .imageSalesPerson .circle:nth-child(1) {
+    height: 42rem;
+    width: 42rem;
+  }
+
+  .boxWhyChooseUs {
+    margin: auto;
+  }
+
+  .boxWhyChooseUs h2 {
+    font-size: 3.2rem;
+  }
+
+  .cardsWhyChooseUs {
+    gap: 3.2rem;
+  }
+
+  .cardWhyChooseUs {
+    gap: 2rem;
+  }
+
+  .cardWhyChooseUs .boxImage {
+    width: 5.2rem;
+  }
+
+  .cardWhyChooseUs p {
+    font-size: 1.8rem;
+  }
+}
